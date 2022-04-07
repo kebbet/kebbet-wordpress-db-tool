@@ -8,10 +8,11 @@
 ?>
 <html>
 	<head>
-		<title>Kebbet WordPress database tool</title>
+	<title>Kebbet WordPress DB-tool</title>
 		<link rel="stylesheet" id="kebbet-db-tool-css" href="assets/css/db-tool.css" media="all">
 	</head>
 	<body>
+		<h1>Kebbet WordPress DB-tool</h1>
 		<?php
 		$input_prefix = "<label for='prefix'>Table prefix<input id='prefix' type='text'></input></label>";
 		$input_old    = "<label for='old'>Old value<input id='old' type='text'></input></label>";
@@ -27,9 +28,14 @@
 		echo $input_prefix;
 		echo $input_old;
 		echo $input_new;
-		echo '<button id="calculate" type="button">Update snippet</button>';
+		echo '<button id="calculate" type="button">Update snippets</button>';
 		echo $textarea;
 		?>
+		<div class="author">
+			<p>Author: <a href="https://verkan.se">Erik Betshammar</a><br/>
+			GitHub: <a href="https://github.com/kebbet/kebbet-wordpress-db-tool">kebbet/kebbet-wordpress-db-tool</a>
+			</p>
+		</div>
 	</body>
 	<script src="assets/js/db-tool.js" id="kebbet-db-tool-js"></script>
 </html>
