@@ -1,0 +1,59 @@
+html {
+	font-size: 16px;
+}
+
+label {
+	cursor: pointer;
+	display: block;
+	max-width: 24rem;
+	margin: 1rem auto 0 auto;
+	font-family: monospace;
+	font-size: 1rem;
+}
+
+input {
+	width: 100%;
+	display: block;
+	max-width: 24rem;
+	margin: 0 auto 0 auto;
+	font-family: monospace;
+	font-size: 1rem;
+	padding: .5rem;
+}
+
+#display {
+	width: 100%;
+	display: block;
+	max-width: 56rem;
+	margin: 5rem auto 0 auto;
+	font-family: monospace;
+	font-size: 0.8rem;
+	line-height: 1.25;
+	padding: 1rem;
+	background-color: #f0eae2;
+	border: .125rem solid black;
+	border-radius: 1rem;
+}
+
+button {
+	display: block;
+	font-family: monospace;
+	padding: .5rem;
+	cursor: pointer;
+}
+
+#calculate {
+	margin: 2rem auto 0 auto;
+}
+
+span.new-value {
+	background-color: #dbf9ad;
+}
+
+span.old-value {
+	background-color: #ffbab6;
+}
+
+span.option {
+	background-color: #9bd7ff;
+}
