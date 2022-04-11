@@ -1,0 +1,37 @@
+<!--
+Generate snippets for updating WordPress databases.
+@author Erik Betshammar <info@verkan.se>
+-->
+<!doctype html>
+<html>
+	<head>
+		<title>Kebbet WordPress DB-tool</title>
+		<link rel="stylesheet" id="kebbet-db-tool-css" href="assets/css/db-tool.css" media="all">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
+	</head>
+	<body>
+		<h1>Kebbet WordPress DB-tool</h1>
+		<fieldset>
+			<label for='prefix'>Table prefix</label><input id='prefix' type='text'></input>
+			<label for='old'>Old value</label><input class="old-value" id='old' type='text'></input>
+			<label for='new'>New value</label><input class="new-value" id='new' type='text'></input>
+			<button id="calculate" type="button">Update snippets</button>
+		</fieldset>
+		<div id='display'>
+			<div class="wrap">
+				<p id='row1'>null</p><button class='copy-row' data-target='row1'>Copy</button>
+				<p id='row2'>null</p><button class='copy-row' data-target='row2'>Copy</button>
+				<p id='row3'>null</p><button class='copy-row' data-target='row3'>Copy</button>
+				<p id='row4'>null</p><button class='copy-row' data-target='row4'>Copy</button>
+			</div>
+		</div>
+		<div class="author">
+			<p>Author: <a href="https://verkan.se">Erik Betshammar</a><br/>
+			GitHub: <a href="https://github.com/kebbet/kebbet-wordpress-db-tool">kebbet/kebbet-wordpress-db-tool</a>
+			</p>
+		</div>
+	</body>
+	<script src="assets/js/db-tool.js" id="kebbet-db-tool-js"></script>
+</html>

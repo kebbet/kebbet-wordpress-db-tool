@@ -1,6 +1,11 @@
 html {
 	font-size: 16px;
 	font-family: monospace;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
 }
 
 h1 {
@@ -10,19 +15,27 @@ h1 {
 
 }
 
+fieldset {
+	border: 0;
+	padding: 0;
+	margin: 0;
+}
+
 label {
 	cursor: pointer;
 	display: block;
+	width: calc(100% - 2rem);
 	max-width: 24rem;
 	margin: 1rem auto 0 auto;
 	font-family: monospace;
-	font-size: 1rem;
+	font-size: 0.8rem;
+	line-height: 1.5;
 }
 
 input {
-	width: 100%;
+	width: calc(100% - 3rem);
 	display: block;
-	max-width: 24rem;
+	max-width: 23rem;
 	margin: 0 auto 0 auto;
 	font-family: monospace;
 	font-size: 1rem;
@@ -30,40 +43,69 @@ input {
 }
 
 #display {
-	width: 100%;
+	width: calc(100% - 2rem);
 	display: block;
 	max-width: 56rem;
 	margin: 5rem auto 0 auto;
 	font-family: monospace;
 	font-size: 0.8rem;
 	line-height: 1.25;
-	padding: 1rem;
 	background-color: #f0eae2;
-	border: .125rem solid black;
-	border-radius: 1rem;
+}
+
+.wrap {
+	padding: 1rem;
 }
 
 button {
 	display: block;
 	font-family: monospace;
-	padding: .5rem;
 	cursor: pointer;
+	border: 0;
+	padding: .8rem 1rem;
+	border-radius: 0;
+	box-shadow: none;
 }
 
 #calculate {
 	margin: 2rem auto 0 auto;
+	background-color: hsl(301, 100%, 85%);
+	color: #070707;
 }
 
-span.new-value {
-	background-color: #dbf9ad;
+#calculate:hover {
+	background-color: hsl(301, 100%, 80%);
 }
 
-span.old-value {
-	background-color: #ffbab6;
+#calculate:active {
+	background-color: hsl(301, 100%, 75%);
 }
 
-span.option {
-	background-color: #9bd7ff;
+.new-value {
+	background-color: hsl(84, 100%, 85%);
+	border: 0;
+}
+
+.old-value {
+	background-color: hsl(3, 100%, 85%);
+	border: 0;
+}
+
+.option {
+	background-color: hsl(204, 100%, 85%);
+}
+
+.copy-row {
+	color: #040404;
+	background-color: hsl(255, 100%, 85%);
+}
+
+.copy-row:hover {
+	background-color: hsl(255, 100%, 80%);
+}
+
+.copy-row:active {
+	background-color: hsl(255, 100%, 75%);
 }
 
 .author {
