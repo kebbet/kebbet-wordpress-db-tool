@@ -98,6 +98,7 @@ button {
 .copy-row {
 	color: #040404;
 	background-color: hsl(255, 100%, 85%);
+	margin-left: 1rem;
 }
 
 .copy-row:hover {
@@ -106,6 +107,25 @@ button {
 
 .copy-row:active {
 	background-color: hsl(255, 100%, 75%);
+}
+
+.copy-row:hover + span {
+	outline: .125rem dashed hsl(107, 70%, 45%);
+}
+
+.copy-row + span {
+	padding: .25rem;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+}
+
+.row:not(:last-child) {
+	margin-bottom: 1rem;
 }
 
 .author {
