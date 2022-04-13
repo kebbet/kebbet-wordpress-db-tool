@@ -10,54 +10,19 @@
 (function () {
 	var body, button, prefix, oldInput, newInput, row1;
 
-	body = document.body;
-	if (!body) {
-		return;
-	}
-
-	button = document.getElementById('calculate');
-	if (!button) {
-		return;
-	}
-
-	prefix = document.getElementById('prefix');
-	if (!prefix) {
-		return;
-	}
-
-	oldInput = document.getElementById('old');
-	if (!oldInput) {
-		return;
-	}
-
-	newInput = document.getElementById('new');
-	if (!newInput) {
-		return;
-	}
-
-	row1 = document.getElementById('row1');
-	if (!row1) {
-		return;
-	}
-
-	row2 = document.getElementById('row2');
-	if (!row2) {
-		return;
-	}
-
-	row3 = document.getElementById('row3');
-	if (!row3) {
-		return;
-	}
-
-	row4 = document.getElementById('row4');
-	if (!row4) {
-		return;
-	}
 	copyClass = 'copy-row';
+	body = document.body;
+	button = document.getElementById('calculate');
+	prefix = document.getElementById('prefix');
+	oldInput = document.getElementById('old');
+	newInput = document.getElementById('new');
+	row1 = document.getElementById('row1');
+	row2 = document.getElementById('row2');
+	row3 = document.getElementById('row3');
+	row4 = document.getElementById('row4');
 	copyButtons = document.getElementsByClassName(copyClass);
-	if (!copyButtons) {
-	return;
+	if (!body || !button || !prefix || !oldInput || !newInput || !row1 || !row2 || !row3 || !row4 || !copyButtons) {
+		return;
 	}
 
 	body.addEventListener('load', changeContent, true);
